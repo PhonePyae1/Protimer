@@ -1,115 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.ui.MainActivity"
-    android:background="#003166">
-
-
-    <ImageButton
-        android:id="@+id/playbutton"
-        android:layout_width="76dp"
-        android:layout_height="73dp"
-        android:background="@drawable/button"
-        android:elevation="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/result"
-        app:layout_constraintHorizontal_bias="0.511"
-        app:layout_constraintStart_toEndOf="@+id/resetButton"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.687" />
+    android:background="#003166"
+    tools:context=".ui.ui.MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="251dp"
-        android:layout_height="236dp"
-        android:layout_marginTop="156dp"
-        android:background="@drawable/timercircle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.474"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/playbutton"
+            android:layout_width="76dp"
+            android:layout_height="73dp"
+            android:background="@drawable/button"
+            android:elevation="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/result"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toEndOf="@+id/resetButton"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="0.687" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:text="00:00:00"
-            android:textColor="@color/black"
-            android:textSize="50sp"
+            android:text="ProTimer "
+            android:textColor="@color/white"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.038" />
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/ic_baseline_mic_off_24"
+            android:background="@drawable/ic_baseline_access_time_24"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/profileButton"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.038" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="251dp"
+            android:layout_height="236dp"
+            android:layout_marginTop="156dp"
+            android:background="@drawable/timercircle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.474"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="00:00:00"
+                android:textColor="@color/black"
+                android:textSize="50sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_baseline_mic_off_24"
+                android:backgroundTint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.958"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.059" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageButton
+            android:id="@+id/resetButton"
+            android:layout_width="58dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="44dp"
+            android:background="@drawable/ic_baseline_stop_circle_24"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.898"
+            android:elevation="5dp"/>
+
+        <ImageButton
+            android:id="@+id/result"
+            android:layout_width="62dp"
+            android:layout_height="63dp"
+            android:layout_marginEnd="44dp"
+            android:background="@drawable/ic_baseline_refresh_24"
+            android:backgroundTint="@color/white"
+            android:elevation="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.898" />
+
+        <ImageButton
+            android:id="@+id/bottomNav"
+            android:layout_width="30dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/ic_baseline_format_list_bulleted_24"
+            android:backgroundTint="#FF7F50"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/profileButton"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.035" />
+
+        <ImageButton
+            android:id="@+id/profileButton"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/ic_baseline_person_24"
             android:backgroundTint="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.958"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.059" />
+            app:layout_constraintVertical_bias="0.028" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <ImageButton
-        android:id="@+id/resetButton"
-        android:layout_width="58dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="44dp"
-        android:background="@drawable/ic_baseline_stop_circle_24"
-        android:backgroundTint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.898"
-        android:elevation="5dp"/>
+    <View
+        android:id="@+id/bottom_sheetBG"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        />
 
-    <ImageButton
-        android:id="@+id/result"
-        android:layout_width="62dp"
-        android:layout_height="63dp"
-        android:layout_marginEnd="44dp"
-        android:background="@drawable/ic_baseline_refresh_24"
-        android:backgroundTint="@color/white"
-        android:elevation="2dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.898" />
-
-    <ImageButton
-        android:layout_width="30dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="20dp"
-        android:background="@drawable/ic_baseline_format_list_bulleted_24"
-        android:backgroundTint="#FF7F50"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/profileButton"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.035" />
-
-    <ImageButton
-        android:id="@+id/profileButton"
-        android:layout_width="34dp"
-        android:layout_height="34dp"
-        android:layout_marginEnd="12dp"
-        android:background="@drawable/ic_baseline_person_24"
-        android:backgroundTint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.028" />
+    <!--<include layout="@layout/bottomsheet"/>-->
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+

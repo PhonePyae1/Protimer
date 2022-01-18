@@ -13,7 +13,7 @@ class Timer(listener: OnTimerListener) {
     private lateinit var runnable: Runnable
 
     private var duration = 0L
-    private var delay = 100L
+    private var delay = 300L
 
     init {
         runnable = Runnable {

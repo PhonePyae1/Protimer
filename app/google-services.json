@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "179425552864",
+    "project_id": "protimer-321ad",
+    "storage_bucket": "protimer-321ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179425552864:android:8dd4068b09d3facf8e6385",
+        "android_client_info": {
+          "package_name": "com.example.protimer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "179425552864-cer4pgict8hdh8vakkg0l1sfpshf5tnt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAID2PoUz6cCkmLvlqpE6XPN0G-EhhTKfU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "179425552864-cer4pgict8hdh8vakkg0l1sfpshf5tnt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
