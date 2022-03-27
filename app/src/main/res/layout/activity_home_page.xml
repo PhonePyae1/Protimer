@@ -55,31 +55,35 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.947" />
 
-        <ImageButton
+        <!--<ImageButton
             android:id="@+id/resetBtn"
             android:layout_width="55dp"
             android:layout_height="56dp"
-            android:layout_marginEnd="324dp"
             android:background="@drawable/ic_baseline_refresh_24"
             android:backgroundTint="@color/white"
             android:elevation="2dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.909" />
-
-        <ImageButton
-            android:id="@+id/stopBtn"
-            android:layout_width="55dp"
-            android:layout_height="56dp"
-            android:background="@drawable/ic_baseline_stop_circle_24"
-            android:backgroundTint="@color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.929"
+            app:layout_constraintHorizontal_bias="0.269"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.909" />
+            app:layout_constraintVertical_bias="0.909" />-->
+
+        <Button
+            android:id="@+id/stopBtn"
+            android:layout_width="164dp"
+            android:layout_height="117dp"
+            android:background="@drawable/button"
+            android:elevation="10dp"
+            android:text="Stop"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.947"
+            android:visibility="gone"/>
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -95,13 +99,14 @@
 
             <TextView
                 android:id="@+id/textView2"
-                android:layout_width="197dp"
-                android:layout_height="74dp"
-                android:text="00:00:00"
+                android:layout_width="225dp"
+                android:layout_height="66dp"
+                android:text="00:00:0"
                 android:textColor="@color/black"
                 android:textSize="50sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.581"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -118,6 +123,33 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.082" />
+
+            <ImageButton
+                android:id="@+id/amplitudeEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@color/white"
+                android:src="@drawable/ic_baseline_record_voice_over_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.129"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.913" />
+
+            <TextView
+                android:id="@+id/txt_amplitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="85"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.223"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.916" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -185,24 +217,58 @@
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.795"
+            app:layout_constraintHorizontal_bias="0.723"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.397" />
 
-        <TextView
-            android:id="@+id/setTime"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=""
-            android:textColor="@color/white"
-            android:textSize="20sp"
+
+
+        <ImageButton
+            android:id="@+id/saveButton"
+            android:layout_width="23dp"
+            android:layout_height="29dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/ic_baseline_save_24"
+            android:backgroundTint="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.171"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.926"
+            app:layout_constraintStart_toEndOf="@+id/bottomNav"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.467" />
+            app:layout_constraintVertical_bias="0.398" />
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="350dp"
+            android:layout_height="194dp"
+            android:layout_marginTop="76dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/setTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.491"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.532" />
+
+            </LinearLayout>
+        </ScrollView>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -214,7 +280,7 @@
         android:visibility="gone"
         />
 
-    <include android:id="@+id/bottom_sheet111" layout="@layout/bottomsheet"/>
+     <include android:id="@+id/bottom_sheet11" layout="@layout/bottomsheet"/>
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

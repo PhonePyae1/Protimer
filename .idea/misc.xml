@@ -3,15 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/ProTimerReal/app/src/main/res/drawable/2arrow.xml" value="0.32685185185185184" />
         <entry key="..\:/ProTimerReal/app/src/main/res/drawable/bottomsheetbackground.xml" value="0.3828125" />
         <entry key="..\:/ProTimerReal/app/src/main/res/drawable/button.xml" value="0.3828125" />
         <entry key="..\:/ProTimerReal/app/src/main/res/drawable/button1.xml" value="0.3828125" />
         <entry key="..\:/ProTimerReal/app/src/main/res/drawable/gradient_background_color.xml" value="0.15555555555555556" />
         <entry key="..\:/ProTimerReal/app/src/main/res/drawable/ic_action_password.xml" value="0.16111111111111112" />
         <entry key="..\:/ProTimerReal/app/src/main/res/drawable/ic_baseline_access_time_24.xml" value="0.22239583333333332" />
+        <entry key="..\:/ProTimerReal/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.32685185185185184" />
+        <entry key="..\:/ProTimerReal/app/src/main/res/drawable/ic_baseline_arrow_back_ios_24.xml" value="0.32685185185185184" />
+        <entry key="..\:/ProTimerReal/app/src/main/res/drawable/ic_baseline_cancel_24.xml" value="0.32685185185185184" />
+        <entry key="..\:/ProTimerReal/app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.32685185185185184" />
         <entry key="..\:/ProTimerReal/app/src/main/res/drawable/ic_baseline_format_list_bulleted_24.xml" value="0.3828125" />
+        <entry key="..\:/ProTimerReal/app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.32685185185185184" />
         <entry key="..\:/ProTimerReal/app/src/main/res/drawable/ic_baseline_pause_circle_filled_24.xml" value="0.3828125" />
         <entry key="..\:/ProTimerReal/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.3828125" />
+        <entry key="..\:/ProTimerReal/app/src/main/res/drawable/ic_baseline_person_241.xml" value="0.32685185185185184" />
         <entry key="..\:/ProTimerReal/app/src/main/res/drawable/ic_baseline_play_circle_filled_24.xml" value="0.3828125" />
         <entry key="..\:/ProTimerReal/app/src/main/res/drawable/ic_baseline_stop_circle_24.xml" value="0.3828125" />
         <entry key="..\:/ProTimerReal/app/src/main/res/drawable/login_button.xml" value="0.16111111111111112" />
@@ -20,14 +27,29 @@
         <entry key="..\:/ProTimerReal/app/src/main/res/drawable/signin_input.xml" value="0.16111111111111112" />
         <entry key="..\:/ProTimerReal/app/src/main/res/drawable/timercircle.xml" value="0.3828125" />
         <entry key="..\:/ProTimerReal/app/src/main/res/drawable/whitebackground.xml" value="0.21666666666666667" />
+        <entry key="..\:/ProTimerReal/app/src/main/res/layout-hdpi/activity_forgot_password.xml" value="0.275" />
+        <entry key="..\:/ProTimerReal/app/src/main/res/layout-hdpi/activity_home_page.xml" value="0.25" />
+        <entry key="..\:/ProTimerReal/app/src/main/res/layout-hdpi/activity_login.xml" value="0.22" />
+        <entry key="..\:/ProTimerReal/app/src/main/res/layout-hdpi/activity_main.xml" value="0.32592592592592595" />
+        <entry key="..\:/ProTimerReal/app/src/main/res/layout-hdpi/activity_profile.xml" value="0.25" />
+        <entry key="..\:/ProTimerReal/app/src/main/res/layout-hdpi/activity_signup.xml" value="0.32592592592592595" />
+        <entry key="..\:/ProTimerReal/app/src/main/res/layout-hdpi/activity_splash_screen.xml" value="0.32592592592592595" />
+        <entry key="..\:/ProTimerReal/app/src/main/res/layout-hdpi/bottomsheet.xml" value="0.36666666666666664" />
+        <entry key="..\:/ProTimerReal/app/src/main/res/layout/activity_edit_profile_page.xml" value="0.2404692082111437" />
         <entry key="..\:/ProTimerReal/app/src/main/res/layout/activity_forgot_password.xml" value="0.2907608695652174" />
-        <entry key="..\:/ProTimerReal/app/src/main/res/layout/activity_home_page.xml" value="0.36666666666666664" />
-        <entry key="..\:/ProTimerReal/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
-        <entry key="..\:/ProTimerReal/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/ProTimerReal/app/src/main/res/layout/activity_profile.xml" value="0.22" />
+        <entry key="..\:/ProTimerReal/app/src/main/res/layout/activity_history.xml" value="0.22" />
+        <entry key="..\:/ProTimerReal/app/src/main/res/layout/activity_home_page.xml" value="0.8166666666666667" />
+        <entry key="..\:/ProTimerReal/app/src/main/res/layout/activity_login.xml" value="0.5" />
+        <entry key="..\:/ProTimerReal/app/src/main/res/layout/activity_main.xml" value="0.67" />
+        <entry key="..\:/ProTimerReal/app/src/main/res/layout/activity_profile.xml" value="0.75" />
+        <entry key="..\:/ProTimerReal/app/src/main/res/layout/activity_setting.xml" value="0.36666666666666664" />
         <entry key="..\:/ProTimerReal/app/src/main/res/layout/activity_signup.xml" value="0.1" />
-        <entry key="..\:/ProTimerReal/app/src/main/res/layout/activity_splash_screen.xml" value="0.33" />
+        <entry key="..\:/ProTimerReal/app/src/main/res/layout/activity_splash_screen.xml" value="0.22" />
         <entry key="..\:/ProTimerReal/app/src/main/res/layout/bottomsheet.xml" value="0.18" />
+        <entry key="..\:/ProTimerReal/app/src/main/res/layout/custom_dialog.xml" value="0.22" />
+        <entry key="..\:/ProTimerReal/app/src/main/res/layout/item.xml" value="0.22" />
+        <entry key="..\:/ProTimerReal/app/src/main/res/menu/contents.xml" value="0.275" />
+        <entry key="..\:/ProTimerReal/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.221875" />
       </map>
     </option>
   </component>

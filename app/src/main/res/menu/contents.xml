@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="18000"
+        android:id="@+id/item0">
+    </item>
+    <item android:title="20000"
+        android:id="@+id/item1">
+    </item>
+    <item android:title="25000"
+        android:id="@+id/item2">
+    </item>
+    <item android:title="30000"
+        android:id="@+id/item3">
+    </item>
+    <item android:title="35000"
+        android:id="@+id/item4">
+    </item>
+    <item android:title="40000"
+        android:id="@+id/item5">
+    </item>
+    <item android:title="45000"
+        android:id="@+id/item6">
+    </item>
+    <item android:title="50000"
+        android:id="@+id/item7">
+    </item>
+</menu>

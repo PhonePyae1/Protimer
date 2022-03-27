@@ -72,6 +72,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/setting"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="20sp"

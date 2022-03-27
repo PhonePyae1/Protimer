@@ -94,7 +94,7 @@ android:background="#3b444b">
     android:layout_height="wrap_content"
     android:text="Sign Up"
     android:layout_marginHorizontal="165dp"
-    android:textColor="#38B6FF"
+    android:textColor="#9c0101"
     android:layout_marginBottom="10dp" />
 
 </LinearLayout>

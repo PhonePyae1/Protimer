@@ -44,9 +44,9 @@ class Timer(listener: OnTimerListener) {
         val hours = (duration/(1000*60*60))
 
         var formatted = if(hours > 0)
-            "%02d:%02d:%02d.%01d".format(hours,minutes,seconds,millis/10)
+            "%01d:%02d:%02d:%01d".format(hours,minutes,seconds,millis/10)
         else
-            "%02d:%02d.%01d".format(minutes,seconds,millis/10)
+            "%02d:%02d:%01d".format(minutes,seconds,millis/100)
         return formatted
     }
 }

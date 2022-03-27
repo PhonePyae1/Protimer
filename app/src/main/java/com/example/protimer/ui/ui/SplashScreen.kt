@@ -7,6 +7,8 @@ import android.os.Handler
 import com.example.protimer.R
 import com.example.protimer.ui.ui.SignIn.Login
 import com.example.protimer.ui.ui.SignIn.Signup
+import kotlinx.android.synthetic.main.activity_splash_screen.*
+import kotlinx.android.synthetic.main.bottomsheet.view.*
 
 class SplashScreen : AppCompatActivity() {
 
